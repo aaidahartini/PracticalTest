@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="js/index.js">
+        <title>Rahsia Kambing</title>
+
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-blue.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    </head>
+    <body>
+        <div data-role="page" id="home" data-theme="b">
+            <div data-role="header">
+                <h1>PRACTICAL TEST DFT40043</h1>>
+            </div>
+            <div data-role="content">
+                <a href = "#rahsia" data-role="button" data-transition="flip">Rahsia Kambing</a>
+                <a href = "#hasrat" data-role="button" data-transition="flip">Hasrat Terbantut </a>
+                <a href = "#pembayaran" data-role="button" data-transition="flip">Pembayaran Online</a>
+                <button id ="alert">Alert</button>
+                <button id="device">Device</button>
+                <button id="snap">Snap Picture</button>
+                <img id="myImage">
+            </div>
+            <div data-role="footer" data-position="fixed"><center>Copyrighted 2021<br>Created by AIDA HARTINI BINTI ISMAIL</center></div>
+        </div>
+
+        <div data-role="page" id="rahsia" data-theme="b">
+            <div data-role="header">
+                <a href="#hasrat" data-role="button">Hasrat Terbantut</a>
+                <a href="#pembayaran" data-role="button">Pembayaran Online</a>
+            </div>
+            <div data-role="content">
+                <table align="center">
+                    <tr>
+                        <td>
+                            <img src="img/kambing.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src = "img/penternakankambing.png">
+                        </td>
+                    </tr>
+                </table>
+                <table align="center">
+                    <tr>
+                        <td>
+                            <h1>"BERMINAT UNTUK MENTERNAK KAMBING?"</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Ketahui langkah demi langkah , bagaimana anda boleh memulakan penternakan kambing dengan mudah dan menjadi seorang penternak yang berjaya</h2>
+                        </td>
+                    </tr>
+                </table>
+                <table align="center">
+                    <tr>
+                        <td>
+                            Tips & Sample Percuma!
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Dapatkan sample percuma "eBook Rahsia Kambing" serta tips-tips menarik mengenai bidang penternakan kambing dari semasa ke semasa dengan melanggan newletter kami. Masukkan nama dan alamat anda dibawah untuk melanggan.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="bayar">
+                                <form action="#" method="POST" onsubmit="return Fund()">
+                                    <h3>Nama Panggilan:<input id="name" placeholder="Name" type="text"></h3>
+                                    <h3>Email:<input id="email" placeholder="E-Mail" type="text"></h3>
+                                    <input type = "submit" value="Berikan Saya Tip PERCUMA Tentang Penternakan Kambing SEKARANG">
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div data-role="footer" data-position="fixed"><center>Dari Meja Mohamaed Farid Sulaiman <br> Selasa 15 Julai 2008 <br>Copyrighted 2021<br>Created by AIDA HARTINI BINTI ISMAIL</center></div>
+
+        </div>
+
+        <div data-role="page"id="hasrat" data-theme="b">
+            <div data-role="header">
+                <a href="#rahsia" data-role="button">Rahsia Kambing</a>
+                <a href="#pembayaran" data-role="button">Pembayaran Online</a>
+            </div>
+            <div data-role="content">
+                <h3> Assalammualaikum & salam sejahtera... Seringkali... kita terbaca tentang kisah-kisah kejayaan petani dan juga penternak yang mampu menjana pendapatan beribu-ribu ringgit sebulan hasil daripada tanaman dan juga ternakan yang mereka usahakan....</h3>
+                <img src="img/news.png">
+                <p>Banyak kisah-kisah kejayaan usahawan-usahawan tani ini dipaparkan, sama ada di akhbar mahupun TV. Kisah-kisah ini amat mengujakan kepada saya, kerana saya amat meminati bidang pertanian dan penternakan. Sememangnya, sudah lama saya menyimpan hasrat untuk menceburkan diri di dalam bidang pertanian dan juga penternakan ini. Tetapi, disebabkan saya bekerja makan gaji.. maka niat tersebut terpaksa dipendamkan.</p>
+                <h1>Hasrat Terbantut....!</h1>
+                <p>
+                    Ditambah lagi dengan kekurangan sumber maklumat tentang bagaimana hendak memulakan serta menceburkan diri di dalam projek pertanian & penternakan ini. Menyebabkan, hasrat saya untuk bergelar seorang usahawan tani yang berjaya terbenam.
+                    <br>
+                    Sehinggalah pada suatu hari, sewaktu saya pulang ke kampung di Melaka, saya telah terserempak dengan seorang pakcik yang menetap di kampung saya. Saya gelarkan dia pakcik H, sejak dulu lagi, saya memang tahu pakcik H ini ada menternak kambing.. tapi pada waktu itu, saya tidak ambil peduli sangat.. maklumlah.. orang kampung bela kambing... biasalah kan?
+                    <br>
+                    Dulu, pakcik H ini membela 5 ekor kambing.. tapi, setelah 7 tahun berlalu, bilangan kambingnya telah mencecah 1,000 ekor. Pergh!! Saya memang betul-betul tidak sangka.. pakcik H yang dulu saya pandang hanyalah seorang "pakcik kampung yang biasa-biasa".. kini telah bertukar menjadi seorang penternak kambing yang sangat berjaya!.
+                    <br>
+                    Perkara ini telah membuka minda dan fikiran saya untuk melihat bidang penternakan kambing ini dengan lebih luas & positif. Saya mula mendekati pakcik H dan mula mempelajari serba sedikit mengenai selok belok penternakan kambing. Alhamdulilah.. pakcik H tidak kedekut ilmu dan sudi berkongsi pengalaman beliau di dalam usaha menternak kambing.
+                    <br>
+                    Saya sangat gembira dan bersyukur mengenali beliau, banyak perkara saya belajar dari beliau dan kini, saya menganggap beliau sebagai salah seorang mentor saya di dalam bidang penternakan kambing.
+                    <br>
+                    Selepas beberapa pertemuan dengan pakcik H, saya mula mempertimbangkan dengan serius tentang hasrat saya yang ingin menjadi seorang usahawan agro yang berjaya sejak dulu lagi. Untuk itu, saya mula mengiatkan usaha saya mencari lebih banyak info serta ilmu tentang penternakan kambing ini dengan membaca buku , menyertai kursus dan seminar penternakan kambing anjuran badan-badan kerajaan dan juga swasta.
+                </p>
+                <h1>Memulakan Langkah....!</h1>
+                <p>
+                    Setelah beberapa bulan mentelaah ilmu penternakan kambing, saya pun memulakan langkah pertama saya di dalam bidang penternakan kambing dengan bermodalkan RM7,000 hasil daripada wang simpanan saya. Dengan modal tersebut, saya mula membina kandang kambing dan juga membeli 5 ekor kambing betina dan seekor kambing jantan jamnapari..
+                    <br>
+                    Alhamdulilah... berbekalkan ilmu yang saya perolehi dari buku, seminar serta tunjuk ajar dari pakcik H. Saya tidak banyak menghadapi masalah di dalam mengusahakan projek penternakan kambing ini. Dalam masa 4 bulan.. dari 6 ekor kambing, ternakan saya telah bertambah menjadi 10 ekor. Selepas hampir setahun mengusahakan penternakan kambing, bilangan ternakan saya sudah mencapai jumlah 20 ekor.
+                    <br>
+                    Jika hendak diukurkan tahap kejayaan saya.. sememangnya.. perjalanan saya masih jauh. Tapi saya sangat optimis dan percaya , berbekalkan usaha yang gigih serta ilmu yang betul.. kita pasti akan BERJAYA!
+                    <br>
+                    Melihatkan hasil ternakan kambing saya... membuatkan saya terfikir. Sudah pastinya, ada ramai lagi insan diluar sana yang mengalami nasib yang hampir sama dengan saya. Mereka minat untuk menceburkan diri di dalam bidang penternakan... tetapi malang , tidak mempunyai mentor serta tidak mempunyai sumber maklumat yang mencukupi menyebabkan , niat mereka untuk memulakan penternakan kambing terbantut. Mungkin anda adalah salah seorang daripada mereka?
+                    <br>
+                    Untuk itu, saya telah mengambil inisiatif, dengan berusaha, mengumpulkan semula maklumat-maklumat yang pernah saya perolehi dulu dan menghimpunkannya, dan akhirnya, jadilah ia sebuah panduan yang lengkap tentang.. “Bagaimana memulakan penternakan kambing?”.
+                    <br>
+                    Semua maklumat yang saya perolehi dari buku-buku, artikel-artikel, seminar-seminar dan juga serba sedikit dari pengalaman sendiri dan juga pengalaman-pengalaman daripada penternak lain.. kesemuanya telah saya himpunkan dan susunkan ia hingga menjadi sebuah ebook panduan yang lengkap yang saya namakan...
+                </p>
+            </div>
+            <div data-role="footer" data-position="fixed"><center>Copyrighted 2021<br>Created by AIDA HARTINI BINTI ISMAIL</center></div>
+        </div>
+        <div data-role="page" id="pembayaran" data-theme="b">
+            <div data-role="header">
+                <a href="#rahsia" data-role="button">Rahsia Kambing</a>
+                <a href="#hasrat" data-role="button">Hasrat Terbantut</a>
+            </div>
+            <div data-role="content">
+                <form action="#" method="POST" onsubmit="return Registration()">
+                    <h3>Name :<input id="name" placeholder="Name" type="text"></h3>
+                    <h3>Email :<input id="email" placeholder="E-Mail" type="text"></h3>
+                    <h3>Contact :<input id="contact" placeholder="Contact" type="text"></h3>
+                    <h3>Bank :<select>
+                        <option>Maybank</option>
+                        <option>Bank Rakyat</option>
+                        <option>Bank Islam</option>
+                        <option>Public Bank</option>
+                        <option>CIMB Bank</option>
+                        <option>Bank Muamalat</option>
+                        <option>AmBank</option>
+                        <option>Bank Simpanan Nasional</option>
+                        <option>Affin Bank</option>
+                        <option>Agro bank</option>
+                        <option>RHB Bank</option>
+                        <option>Hong Leong Bank</option>
+                    </select></h3>
+                    <h3>Bukti Pembayaran :<input id="bukti" placeholder="Bukti Pembayaran" type="text"></h3>
+                </form>
+            </div>
+            <div data-role="footer" data-position="fixed"><center>Copyrighted 2021<br>Created by AIDA HARTINI BINTI ISMAIL</center></div>
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+        <script>
+            function Fund(){
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                alert("Your Registration has been recorded \nName : "+ name + "\nEmail Address :"+ email)
+            }
+
+            function Registration(){
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var contact = document.getElementById("contact").value;
+                alert("Thank You for your payment. Your payment are in process")
+            }
+
+            document.getElementById("snap").addEventListener("click",snap);
+            function snap(){
+                navigator.camera.getPicture(onSucess , onFailed,{
+                    quality:50,
+                    destinationType:Camera.DestinationType.DATA_URL
+                });
+
+                function onSucess(imageData){
+                    var image =document.getElementById('myImage');
+                    image.src="data:image/jpeg;based64," +imageData;
+                }
+
+                function onFailed(message){
+                    alert('Failed due to ' + message);
+                }
+            }
+
+            document.getElementById("alert").addEventListener("click",alert);
+            function alert(){
+                alert("alert")
+            }
+        </script>
+    </body>
+</html>
